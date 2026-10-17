@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agragr"
+version = "0.1.0"
+description = "Agentic RAG patterns: knowledge-graph construction, multi-hop GraphRAG, self-RAG/corrective-RAG loop, and RAGAS-style evaluation"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.hatch.build.targets.wheel]
+packages = ["agragr"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
