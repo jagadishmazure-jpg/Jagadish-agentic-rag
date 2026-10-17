@@ -8,7 +8,7 @@ of the source sentence it was extracted from.
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 # Known entities in the synthetic corpus. In production this is replaced by
 # an NER model / entity linker; here the gazetteer keeps everything

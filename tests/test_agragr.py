@@ -6,7 +6,6 @@ corpus in data/ is the shared fixture.
 
 from __future__ import annotations
 
-import json
 from pathlib import Path
 
 import pytest
@@ -25,10 +24,8 @@ from agragr import (
     faithfulness,
     link_entities,
     retrieve,
-    score_relevance,
 )
-from agragr.eval import load_gold
-from agragr.selfrag import corrective_retrieve, generate
+from agragr.selfrag import corrective_retrieve
 
 DATA = Path(__file__).resolve().parent.parent / "data"
 

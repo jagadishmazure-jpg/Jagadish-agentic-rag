@@ -8,7 +8,7 @@ Falls back to plain chunk retrieval when the graph has no coverage.
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 from .extract import link_entities
 from .graph import KnowledgeGraph, PathStep
